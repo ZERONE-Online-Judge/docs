@@ -2,10 +2,29 @@
 
 ## 기술 기준
 
-- `Vite` 기반 `React`
-- 스타일링: `Tailwind CSS`
-- 서버 상태 관리: `TanStack Query`
-- 클라이언트 전역 상태 관리: `Zustand`
+| 구분 | 이름 | 용도 |
+| --- | --- | --- |
+| 프레임워크 / 빌드 | Vite | 프론트엔드 개발 서버 및 빌드 도구 |
+| UI 라이브러리 | React | 화면 컴포넌트 구성 |
+| 언어 | TypeScript | 정적 타입 기반 개발 |
+| 스타일링 | Tailwind CSS | 유틸리티 기반 CSS 스타일링 |
+| 라우팅 | React Router | 페이지 라우팅 및 URL 관리 |
+| 서버 상태 관리 | TanStack Query | API 데이터 캐싱, 재요청, 서버 상태 관리 |
+| 클라이언트 상태 관리 | Zustand | 클라이언트 전역 상태 관리 |
+| 폼 | React Hook Form | 폼 상태 관리 |
+| 검증 | Zod | 폼 및 데이터 스키마 검증 |
+| 폼 검증 연결 | @hookform/resolvers | React Hook Form과 Zod 연결 |
+| 코드 에디터 | Monaco Editor | 코드 작성 및 소스코드 조회 UI |
+| Markdown 렌더링 | React Markdown | Markdown 렌더링 |
+| Markdown 확장 | remark-gfm | 표 등 GitHub Flavored Markdown 지원 |
+| 수식 파싱 | remark-math | Markdown 내 수식 문법 파싱 |
+| 수식 렌더링 | rehype-katex / KaTeX | LaTeX 수식 렌더링 |
+| HTML 정제 | rehype-sanitize | Markdown 렌더링 시 HTML 안전 처리 |
+| 린트 | ESLint | 코드 규칙 검사 |
+| 포맷터 | Prettier | 코드 스타일 자동 정리 |
+| Tailwind 포맷 | prettier-plugin-tailwindcss | Tailwind class 정렬 |
+
+- 위 기술 스택을 기준으로 프론트엔드를 구현한다.
 - 신규 요구사항과 정책을 기준으로 새 디자인 설계
 - 공개 영역, 참가 팀 영역, 운영 영역을 명확히 구분
 
