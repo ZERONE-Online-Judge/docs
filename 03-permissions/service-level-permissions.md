@@ -93,7 +93,6 @@
 - `contest.scoreboard.score_adjust`
 - `contest.judge_queue.view`
 - `judge.queue.view`
-- `judge.job.retry`
 - `judge.job.cancel`
 - `judge.server.view`
 - `judge.server.scale`

@@ -91,8 +91,8 @@ priority DESC, queue_position ASC
 `queue_position`은 제출 생성 transaction에서 증가하는 sequence 값이다.
 동일 우선순위에서는 `submitted_at ASC, submission_id ASC`와 같은 의미가 되도록 생성한다.
 
-재채점 job은 기본 제출보다 낮은 priority 또는 별도 queue group으로 둘 수 있다.
-MVP에서는 재채점도 같은 큐를 쓰되 `priority = -10`으로 둔다.
+수동 재채점 job은 제공하지 않는다.
+운영자와 서비스 마스터 모두 재채점 job을 생성할 수 없다.
 
 ## Lease 정책
 

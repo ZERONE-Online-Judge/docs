@@ -144,12 +144,25 @@
 - 테스트케이스 수동 등록
 - 테스트케이스 수정
 - 테스트케이스 삭제
+- `testlib.h` 업로드
+- `validator.cpp` 업로드
+- `checker.cpp` 업로드
+- `.in/.out` 파일 쌍 업로드
+- validator/checker 검증 후 active testcase set 생성
 
 후속 상세화 필요:
 
-- 입력/출력 데이터 형식
 - 공개/비공개 구분 여부
 - 그룹 또는 서브태스크 연결 방식
+
+테스트케이스 검증:
+
+- 문제마다 `testlib.h`, `validator.cpp`, `checker.cpp`를 제공한다.
+- 테스트케이스는 generator 없이 `.in`과 `.out` 파일 쌍으로 구성한다.
+- 서버는 `.in` 파일을 validator stdin으로 넣어 검증한다.
+- 서버는 checker에 input, official answer, participant output 경로를 넘긴다.
+- `.out` 파일은 official answer와 participant output 양쪽에 넣어 self-check한다.
+- 모든 테스트케이스가 통과하면 새 active testcase set을 만든다.
 
 ### 6. 테스트케이스 제너레이터 탭
 

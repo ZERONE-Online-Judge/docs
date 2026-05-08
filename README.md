@@ -86,6 +86,14 @@
 - [operations-and-permissions.md](./09-visual-summary/operations-and-permissions.md): 대회 운영 방식과 권한명 요약
 - [decided-policies.md](./09-visual-summary/decided-policies.md): 확정된 운영/채점/공개/메일/백업 정책 요약
 
+### 10-implementation-progress
+
+- [README.md](./10-implementation-progress/README.md): 프론트엔드/백엔드 구현 진행 상황과 검증 로그
+
+### 11-api
+
+- [README.md](./11-api/README.md): 구현된 백엔드 API 주소별 파라미터, 정상 응답, 에러 응답 문서
+
 ### 99-archive
 
 - 이전 통합 문서 보관

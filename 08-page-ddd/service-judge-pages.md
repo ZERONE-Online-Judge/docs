@@ -229,9 +229,9 @@ POST /admin/judge/jobs/{job_id}/cancel
 | 서버 config 변경 | `judge.server.config_update` |
 | node 비활성화/복구 | `judge.server.config_update` |
 | 클러스터 정책 변경 | `judge.cluster.policy_update` |
-| job retry/cancel | `judge.job.retry`, `judge.job.cancel` |
+| job cancel | `judge.job.cancel` |
 
-서비스 마스터는 모든 작업을 수행할 수 있다.
+서비스 마스터도 재채점/job retry는 수행할 수 없다.
 
 ## Command 후보
 

@@ -117,7 +117,6 @@
 ### Judge Infrastructure
 
 - `judge.queue.view`
-- `judge.job.retry`
 - `judge.job.cancel`
 - `judge.server.view`
 - `judge.server.scale`
@@ -145,7 +144,7 @@
 | `contest.info.update_schedule` | `contest.update_schedule` | prefix 통일 |
 | `contest.participant_setting.view` | `contest.participant_policy.view` | API path의 participant-policy와 맞춤 |
 | `contest.participant_setting.update` | `contest.participant_policy.update` | API path의 participant-policy와 맞춤 |
-| `submission.rejudge` | `judge.job.retry` | 재채점은 대회 운영자 권한이 아니라 채점 인프라 권한으로 처리 |
+| `submission.rejudge` | 사용하지 않음 | 수동 재채점은 서비스 마스터 포함 모든 권한에서 제공하지 않음 |
 | `submission.cancel` | `contest.submission.cancel` 또는 `judge.job.cancel` | 제출 취소와 인프라 job 취소를 분리 |
 | `contest.judge_queue.view` | `contest.judge_queue.view` | 특정 대회 큐 조회 |
 | `judge.queue.view` | `judge.queue.view` | 전역 인프라 큐 조회 |
@@ -172,7 +171,7 @@
 | `POST /operator/contests/{contest_id}/scoreboard/finalize` | `contest.scoreboard.finalize` |
 | `GET /admin/judge/dashboard` | `judge.queue.view` or `judge.server.view` |
 | `PATCH /admin/judge/nodes/{node_id}/slots` | `judge.server.scale` |
-| `POST /admin/judge/jobs/{job_id}/retry` | `judge.job.retry` |
+| `POST /admin/judge/jobs/{job_id}/retry` | 제공하지 않음 |
 | `POST /admin/judge/jobs/{job_id}/cancel` | `judge.job.cancel` |
 
 ## 구현 메모

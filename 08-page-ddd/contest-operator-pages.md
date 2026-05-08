@@ -36,7 +36,7 @@
 | 관리자용 채점 결과 | 단일 제출의 판정, 코드, 메시지 확인 | `contest.submission.view` |
 | 관리자용 스코어보드 | 실제 스코어보드, 프리즈/해제/최종 공개 관리 | `contest.scoreboard.*` |
 | 종료 후 점수 조정 | 종료 후 팀/문제별 점수 수동 조정 | `contest.scoreboard.score_adjust` |
-| 결과 확정 | 재채점 결과와 점수 조정 검토, 공식 결과 확정 | 스코어보드 권한 |
+| 결과 확정 | 점수 조정 검토, 공식 결과 확정 | 스코어보드 권한 |
 
 ## Bounded Context 관계
 
